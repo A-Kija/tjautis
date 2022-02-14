@@ -35,13 +35,48 @@ const animal = 'Begemotas';
 // console.log(animal100);
 
 
-let sum1 = 0;
+// let sum1 = 0;
+
+// for (let i = 0; i < 10; i++) {
+//     let run = rand(1, 6);
+//     console.log(run);
+
+//     sum1 = sum1 + run;
+// }
+
+// console.log('Suma:', sum1);
+
+
+
+let sum2 = 0;
+let counter2 = 0;
+
+for (let i = 0; i < 10; i++) {
+    counter2++;
+    let run = rand(1, 6);
+    console.log(run);
+    sum2 = sum2 + run;
+    if (sum2 > 20) {
+        break;
+    }
+
+}
+
+console.log('Suma:', sum2, 'Viso:', counter2);
+
+
+
+let sum3 = 0;
+let counter3 = 0;
 
 for (let i = 0; i < 10; i++) {
     let run = rand(1, 6);
+    if (sum3 + run > 20) {
+        break;
+    }
+    counter3++;
     console.log(run);
-
-    sum1 = sum1 + run;
+    sum3 = sum3 + run;
 }
 
-console.log('Suma:', sum1);
+console.log('Suma:', sum3, 'Viso:', counter3);
