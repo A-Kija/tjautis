@@ -80,3 +80,35 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log('Suma:', sum3, 'Viso:', counter3);
+
+
+
+let more4 = 0;
+
+for (let i = 0; i < 10; i++) {
+    let run = rand(1, 6);
+    console.log(run);
+    if (run > 4) {
+        more4++;
+    }
+
+}
+
+console.log('Kartai:', more4);
+
+
+let _3 = 0;
+let _5 = 0;
+
+for (let i = 0; i < 10; i++) {
+    let run = rand(1, 6);
+    console.log(run);
+    if (run == 3) {
+        _3++;
+    } else if (run == 5) {
+        _5++;
+    }
+
+}
+
+console.log('3:', _3, '5:', _5);
