@@ -74,3 +74,24 @@ switch (run) {
     default:
         console.log('Pienas');
 }
+
+let run2;
+let count2 = 0;
+let saugiklis = 0;
+do {
+    if (saugiklis++ > 100) break;
+    count2++;
+    run2 = rand(1, 6);
+    console.log(run2);
+
+} while (run2 != 10);
+console.log('prasisuko:', count2);
+
+// == --> !=
+// != --> ==
+// > --> <=
+// <= --> >
+// < --> >=
+// >= --> <
+// || --> &&
+// && --> ||
