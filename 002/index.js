@@ -1,3 +1,9 @@
+function rand(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+}
+
 let siunta = 'M';
 
 console.log('Siunčiam ', siunta);
@@ -49,4 +55,22 @@ switch (light) {
         break;
     default:
         console.log('Wait');
+}
+
+
+let run = rand(1, 6);
+
+console.log('run', run);
+
+switch (run) {
+    case 1:
+    case 5:
+        console.log('Ledai');
+        break;
+    case 2:
+    case 4:
+        console.log('Cipsai');
+        break;
+    default:
+        console.log('Pienas');
 }
