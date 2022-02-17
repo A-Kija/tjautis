@@ -99,3 +99,12 @@ for (let i = 0; i < bigHouse.length; i++) {
         }
     }
 }
+
+let h2o = 1000;
+let days = 0;
+while (h2o > 0) {
+    days++;
+    h2o = h2o - rand(70, 200);
+}
+
+console.log('Karvės numirė iš troškulio ' + days + ' dieną');
