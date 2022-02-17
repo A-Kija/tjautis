@@ -90,3 +90,12 @@ for (let i = 0; i < bigHouse.length; i++) {
         console.log(bigHouse[i][k]);
     }
 }
+
+
+for (let i = 0; i < bigHouse.length; i++) {
+    for (let k = 0; k < bigHouse[i].length; k++) {
+        if (bigHouse[i][k] == 'Birutė') {
+            console.log('Birutė gyvena:', i, k);
+        }
+    }
+}
