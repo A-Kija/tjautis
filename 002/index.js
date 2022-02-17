@@ -84,8 +84,10 @@ do {
     run2 = rand(1, 6);
     console.log(run2);
 
-} while (run2 != 10);
+} while (run2 != 5);
 console.log('prasisuko:', count2);
+
+
 
 // == --> !=
 // != --> ==
@@ -95,3 +97,37 @@ console.log('prasisuko:', count2);
 // >= --> <
 // || --> &&
 // && --> ||
+
+
+
+let run3;
+let count3 = 0;
+
+do {
+
+    count3++;
+    run3 = rand(1, 6);
+    console.log(run3);
+
+} while (run3 != 5 && run3 != 1);
+console.log('prasisuko:', count3);
+
+
+let runSum = 0;
+let count4 = 0;
+
+// do {
+//     let run = rand(1, 6);
+//     console.log(run);
+//     count4++;
+//     runSum = runSum + run;
+// } while (runSum <= 33);
+
+while (runSum <= 33) {
+    let run = rand(1, 6);
+    console.log(run);
+    count4++;
+    runSum = runSum + run;
+}
+
+console.log('prasisuko:', count4, 'suma:', runSum);
