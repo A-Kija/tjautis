@@ -19,7 +19,50 @@ for (let i = 0; i < 10; i++) {
 let mas = [];
 
 for (let i = 0; i < 10; i++) {
-    mas.push(rand(0, 7));
+    mas.push(rand(4, 11));
 }
 
 console.table(mas);
+
+// for (let i = 0; i < mas.length; i++) {
+
+//     if (mas[i] > 3) {
+//         console.log(mas[i]);
+//     }
+
+// }
+
+
+let bigSum = 0;
+
+for (let i = 0; i < mas.length; i++) {
+
+    bigSum = bigSum + mas[i];
+
+}
+console.log(bigSum);
+
+
+
+let minVal = mas[0];
+
+for (let i = 1; i < mas.length; i++) {
+
+    if (mas[i] < minVal) {
+        minVal = mas[i];
+    }
+
+}
+console.log(minVal);
+
+
+let count = 0;
+
+for (let i = 0; i < mas.length; i++) {
+
+    if (mas[i] % 2 == 0) {
+        count++;
+    }
+
+}
+console.log(count);
