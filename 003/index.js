@@ -68,7 +68,7 @@ for (let i = 0; i < mas.length; i++) {
 console.log(count);
 
 let one = ['Nausėda', 'Antanas', 'Petras'];
-let two = ['Linas', 'Birutė', 'Bebras'];
+let two = ['Linas', 'Birutė', 'Bebras', 'Žirafa'];
 let three = ['Tomas', 'Sima', 'Saulius'];
 
 let bigHouse = [];
@@ -79,4 +79,14 @@ bigHouse.push(three);
 
 console.table(bigHouse);
 
-console.log(bigHouse[0][0]);
+// console.log(bigHouse[2][1]);
+
+
+for (let i = 0; i < bigHouse.length; i++) {
+    // console.log(bigHouse[i]); // butu masyvas
+    // const store = bigHouse[i];
+    // const flats = store.length;
+    for (let k = 0; k < bigHouse[i].length; k++) {
+        console.log(bigHouse[i][k]);
+    }
+}
