@@ -66,3 +66,17 @@ for (let i = 0; i < mas.length; i++) {
 
 }
 console.log(count);
+
+let one = ['Nausėda', 'Antanas', 'Petras'];
+let two = ['Linas', 'Birutė', 'Bebras'];
+let three = ['Tomas', 'Sima', 'Saulius'];
+
+let bigHouse = [];
+
+bigHouse.push(one);
+bigHouse.push(two);
+bigHouse.push(three);
+
+console.table(bigHouse);
+
+console.log(bigHouse[0][0]);
