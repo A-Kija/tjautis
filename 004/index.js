@@ -56,3 +56,22 @@ const sum = function(a, b) {
 
 // iskvietimas
 sum(5, 8);
+
+
+const calc = [];
+
+calc[0] = function(a, b) {
+    let suma = a + b;
+    console.log(suma);
+}
+
+calc[1] = function(a, b) {
+    let suma = a * b;
+    console.log(suma);
+}
+
+console.log(calc);
+
+
+calc[0](7, 10);
+calc[1](7, 10);
