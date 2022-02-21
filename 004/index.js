@@ -75,3 +75,44 @@ console.log(calc);
 
 calc[0](7, 10);
 calc[1](7, 10);
+
+const helloReturn = function() {
+
+    // return 'Hello, America';
+
+    console.log('before');
+
+    return 'Hello, Africa';
+
+    console.log('after'); // <--- niekad gyvenime kodas nebus paleistas
+}
+
+
+let africa = helloReturn();
+
+console.log(helloReturn());
+
+console.log(africa);
+
+const pirminisSkaicius = function(sk) {
+
+    if (typeof sk != 'number') {
+        return 'Blogai';
+    }
+
+    if (isNaN(sk)) {
+        return 'Not a Number!';
+    }
+
+    for (let i = 2; i < sk; i++) {
+        if (sk % i == 0) {
+            return 'Ne pirminis, nes dalinasi iš ' + i;
+        }
+    }
+    return 'Taip pirminis';
+}
+
+let n = 'a';
+
+
+console.log(pirminisSkaicius(++n));
